@@ -17,7 +17,6 @@ html {
     background-repeat: no-repeat;
 }
 .navbar {
-    border: 1px solid red;
     width: 100%;
     display: block;
     padding: 0 10px;
@@ -77,6 +76,7 @@ html {
         align-items: center;
         padding-top: 15px;
         margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .logo {
         width: 40px;
@@ -208,6 +208,18 @@ html {
     .discover {
         padding: 10;
     }
+    .discover {
+        margin: 20px 0;
+        padding: 5px 0;
+    }
+    .discover .discover-menu {
+        text-decoration: none;
+        padding: 0 5px;
+    }
+    .discover .discover-menu i {
+        padding: 0 5px;
+    }
+    
 
     /*==========================================
     ================SECTION THREE=================
