@@ -211,15 +211,20 @@ html {
     .discover {
         margin: 20px 0;
         padding: 5px 0;
+        background-color: #ff2600b4;
+        color: white;
+        border: none;
+        border-radius: 3px;
     }
     .discover .discover-menu {
         text-decoration: none;
         padding: 0 5px;
+        color: white;
     }
     .discover .discover-menu i {
         padding: 0 5px;
     }
-    
+
 
     /*==========================================
     ================SECTION THREE=================
