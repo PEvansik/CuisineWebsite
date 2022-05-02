@@ -11,4 +11,16 @@
 
 //when you click next,
     //check the index of the present item on the active DOM (for mobile) to ensure it is not the first element
-    //
+    //check the index of the element in the first and last container of the stack (desktop and tablet)
+    //increment the tracker such that the item in the active stack is
+    //if the current element is the last element, return
+
+
+let mealButtons = document.querySelectorAll(".food-time")
+let imageContainers =document.querySelectorAll("image-container")
+
+mealButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+
+    })
+})

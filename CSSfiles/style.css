@@ -109,6 +109,14 @@ html {
     .hamburger.active .bottom {
         transform: rotate(-45deg) translateY(-8px);
     }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+        padding: 15px 0;
+        margin-bottom: 10px;
+    }
 
     /*==========================================
     ================SECTION ONE=================
@@ -121,9 +129,7 @@ html {
         padding: 20px ;
         margin: 5px 0;
     }
-    h1 {
-        font-size: 5rem;
-    }
+
     form {
         padding: 10px 0;
     }
@@ -167,7 +173,7 @@ html {
     ============================================*/
 
     .section-two {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../asset/secondSection/food-s.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -184,11 +190,7 @@ html {
         margin-bottom: 15px;
         color: #ffffffb4;
     }
-    h2 {
-        font-size: 3rem;
-        padding: 15px 0;
-        margin-bottom: 10px;
-    }
+
     .section-two > h2::before {
         content: "About Us";
         font-size: 1rem;
@@ -229,6 +231,109 @@ html {
     /*==========================================
     ================SECTION THREE=================
     ============================================*/
+    .section-three {
+        padding: 0 5px;
+        display: grid;
+        place-items: center;
+    }
+    .order-online {
+        color: #ff2600;
+        padding-top: 10px;
+        font-weight: 700;
+    }
+    .meals {
+        text-align: center;
+    }
+    .meal-class {
+        margin-bottom: 5px;
+    }
+    .meal-class button {
+        font-size: 1.5rem;
+        border: none;
+        color: #ff2600b4;
+        padding: 0 2px;;
+        border-bottom: 1px solid #ff2600b4;
+        border-radius: 3px;
+    }
+    .breakfast:hover,
+    .launch:hover,
+    .dinner:hover,
+    .dessert:hover,
+    .shake:hover {
+        color: #000;
+        border-top: 1px solid #ff2600b4;
+        border-right: 1px solid #ff2600b4;
+        border-bottom: none;
+        border-left: 1px solid #ff2600b4;
+        background-color: #ff2600b4;
+    }
+    .carousel-box {
+        position: relative;
+        width: 95%;
+        height: auto;
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+    .display {
+        height: 300px;
+        width: 250px;
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+    .prev .fa-solid,
+    .next .fa-solid {
+        position: absolute;
+        color: #ff2600b4;
+        transition: all .3s;
+    }
+    .prev .fa-solid:hover,
+    .next .fa-solid:hover {
+        color: #ff2600;
+        transform: scale(1.3);
+    }
+    .prev .fa-solid {
+        left: 10px;
+        top: 50%;
+    }
+    .next .fa-solid {
+        right: 10px;
+        top: 50%;
+    }
+    .image-container {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        height: 300px;
+        border: 1px solid red;
+        overflow-y: hidden;
+    }
+    .breakfast-image,
+    .launch-image,
+    .dinner-image,
+    .dessert-image,
+    .shake-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .breakfast-images img,
+    .launch-images img,
+    .dinner-images img,
+    .dessert-images img,
+    .shake-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .name-price-card {
+        position: absolute;
+        inset: 0;
+    }
+    .name-price-card > span {
+        display: block;
+    }
 
     /*==========================================
     ================SECTION FOUR=================
