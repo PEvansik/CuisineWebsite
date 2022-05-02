@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),  url('../asset/hero/hero-l.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar {
+    border: 1px solid red;
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+}
+.logo {
+
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.hamburger {
+    display: none;
+}
+.menu ul li {
+    list-style: none;
+}
+
+/*==========================================
+================SECTION ONE=================
+============================================*/
+
+/*==========================================
+================SECTION TWO=================
+============================================*/
+
+/*==========================================
+================SECTION THREE=================
+============================================*/
+
+/*==========================================
+================SECTION FOUR=================
+============================================*/
+
+
+/*==========================================
+================MEDIA QUERY=================
+============================================*/
+
+
+@media only screen and (min-device-width: 0) {
+
+    /*==========================================
+    ================SECTION ONE=================
+    ============================================*/
+    
+    .container {
+        padding-top: 0;
+        background-position: center;
+    }
+    .menu {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        margin-top: 0;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    .hamburger {
+        width: 28px;
+        height: 28px;
+        display: block;
+        color: white;
+    }
+    .ham {
+
+        width: 25px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        margin: 3px auto;
+        border-radius: 3px;
+        transition: 3s ease-in-out;
+        -webkit-transition: 3s ease-in-out;
+    }
+    }
+    .hamburger.active .top {
+        transform: rotate(45deg) translateY(8px);
+    }
+    .hamburger.active .middle {
+        opacity: 0;
+    }
+    .hamburger.active .bottom {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    /*==========================================
+    ================SECTION ONE=================
+    ============================================*/
+    .sectiion-one{
+        text-align: center;
+        color: white;
+    }
+    .sectiion-one > * {
+        padding: 20px ;
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    form {
+        padding: 10px 0;
+    }
+    input {
+        padding: 5px 0;
+        border: none;
+        border-radius: 3px;
+    }
+    .location-button {
+        padding: 5px;
+        background-color: #ff2600b4;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    .follower-stat {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .fa-brands {
+        padding-right: 5px;
+        transition: 3s ease-in-out;
+    }
+    .fa-brands:hover {
+        font-weight: 700;
+    }
+    .fa-facebook-f {
+        color: blue;
+    }
+    .fa-twitter {
+
+    }
+    .fa-instagram {
+
+    }
+    /*==========================================
+    ================SECTION TWO=================
+    ============================================*/
+
+    .section-two {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: white;
+        padding: 0 5px;
+    }
+    .section-two-span {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 1rem;
+        position: absolute;
+        left: 10%;
+        margin-bottom: 15px;
+        color: #ffffffb4;
+    }
+    h2 {
+        font-size: 3rem;
+        padding: 15px 0;
+        margin-bottom: 10px;
+    }
+    .section-two > h2::before {
+        content: "About Us";
+        font-size: 1rem;
+        position: absolute;
+        left: 15px;
+        color: #ff2600b4;
+
+    }
+    p {
+        font-size: 1.4rem;
+        padding: 10px 10px;
+        line-height: 2rem;
+    }
+    .section-two-second-par {
+        display: none;
+    }
+    .discover {
+        padding: 10;
+    }
+
+    /*==========================================
+    ================SECTION THREE=================
+    ============================================*/
+
+    /*==========================================
+    ================SECTION FOUR=================
+    ============================================*/
+
+
+    /*==========================================
+    ================MEDIA QUERY=================
+    ============================================*/
+
+}
