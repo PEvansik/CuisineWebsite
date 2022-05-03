@@ -241,9 +241,6 @@ html {
         padding-top: 10px;
         font-weight: 700;
     }
-    .meals {
-        text-align: center;
-    }
     .meal-class {
         margin-bottom: 5px;
     }
@@ -267,18 +264,24 @@ html {
         border-left: 1px solid #ff2600b4;
         background-color: #ff2600b4;
     }
+    .meals {
+        text-align: center;
+    }
+
     .carousel-box {
         position: relative;
         width: 95%;
         height: auto;
         border: 1px solid red;
         margin: 0 auto;
+        display: grid;
+        place-items: center;
     }
     .display {
         height: 300px;
         width: 250px;
         border: 1px solid red;
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .prev .fa-solid,
     .next .fa-solid {
@@ -305,7 +308,7 @@ html {
         margin: 10px 0;
         height: 300px;
         border: 1px solid red;
-        overflow-y: hidden;
+        //overflow-y: hidden;
     }
     .breakfast-image,
     .launch-image,
@@ -333,6 +336,24 @@ html {
     }
     .name-price-card > span {
         display: block;
+    }
+    .circle-holder {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .circle-holder .circles {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #ff2600;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .carousel-box .circles.selected  {
+        background-color: #ff2600;
     }
 
     /*==========================================
