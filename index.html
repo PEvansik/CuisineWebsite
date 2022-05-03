@@ -95,24 +95,22 @@
 
         <h2>Our Speciality Cuisine</h2>
         <div class="meal-class">
-            <button href="#" class="food-time breakfast">Breakfast</button>
-            <button href="#" class="food-time launch">Launch</button>
-            <button href="#" class="food-time dinner">Dinner</button>
-            <button href="#" class="food-time dessert">Dessert</button>
-            <button href="#" class="food-time shake">Shake</button>
+            <button href="#" data-target="all">All</button>
+            <button href="#" data-target="breakfast">Breakfast</button>
+            <button href="#" data-target="launch">Launch</button>
+            <button href="#" data-target="dinner">Dinner</button>
+            <button href="#" data-target="dessert">Dessert</button>
+            <button href="#" data-target="shake">Shake</button>
         </div>
-        <section class="meals">
-            <div class="carousel-box">
-                <span class="prev"><i class="fa-solid fa-circle-chevron-left"></i></span>
-                <!--Display the different meals-->
-                <div class="display"></div>
-                <span class="next"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                
-            </div>
 
+        <!--Prev and Next buttons-->
+        <span class="prev"><i class="fa-solid fa-circle-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-circle-chevron-right"></i></span>
+
+        <section class="carousel">
             <!--===================  BREAKFAST   ======================-->
-            <div class="breakfast-images image-container">
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/blueberries.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -129,7 +127,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/bread-egg.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -146,7 +145,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/bread.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -163,7 +163,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/breakfast-inbed.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -180,7 +181,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/breakfast.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -197,7 +199,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/pancake.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -214,7 +217,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/pancakes.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -231,7 +235,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="breakfast-image">
+
+                <div data-items="breakfast-image">
                     <img src="asset/third section/breakfast/table.jpg" alt="">
                     <div class="name-price-card">
                         <span>$7.99</span>
@@ -248,618 +253,615 @@
                         </span>
                     </div>
                 </div>
-                <div class="circle-holder">
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                </div>
-            </div>
+
 
             <!--===================  LAUNCH   ======================-->
-            <div class="launch-images image-container">
-                <div class="launch-image">
-                    <img src="asset/third section/launch/burger.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/food.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/spaghetti.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/lunch.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/meal.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/pizza.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/smashed-avocado-on-toast.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="launch-image">
-                    <img src="asset/third section/launch/wrap.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$14.99</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Contadina</span>
-                        <span>
-                            <a>Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="circle-holder">
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/burger.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
                 </div>
             </div>
 
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/food.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/spaghetti.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/lunch.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/meal.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+            
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/pizza.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/smashed-avocado-on-toast.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="launch-image">
+                <img src="asset/third section/launch/wrap.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$14.99</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Contadina</span>
+                    <span>
+                        <a>Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+
             <!--===================  DINNER   ======================-->
-            <div class="dinner-images image-container">
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/food.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/food.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/pasta.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/pasta.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/pork.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/pork.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/steak.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/steak.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/steakmeat.jpg" alt="">
-                    <div class="name-price-card">
-                        <span></span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span></span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/steakmeat.jpg" alt="">
+                <div class="name-price-card">
+                    <span></span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span></span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/tacos-al-pastor.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/tacos-al-pastor.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/vegan.jpg" alt="">
-                    <div class="name-price-card">
-                        <span></span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span></span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/vegan.jpg" alt="">
+                <div class="name-price-card">
+                    <span></span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span></span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
-                <div class="dinner-image">
-                    <img src="asset/third section/dinner/vegetables.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$19.23</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Spose</span>
-                        <span>
-                        <a href="#">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="circle-holder">
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
+            </div>
+
+            <div data-items="dinner-image">
+                <img src="asset/third section/dinner/vegetables.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$19.23</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Spose</span>
+                    <span>
+                    <a href="#">Order Now</a>
+                    </span>
                 </div>
             </div>
 
 
             <!--===================  DESSERT   ======================-->
-            <div class="dessert-images image-container">
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/pancake.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/brownie.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/chocolate-cake.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/churros.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/cupcakes.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/ice-cream-choco.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/ice-cream.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="dessert-image">
-                    <img src="asset/third section/dessert/icecream-glass.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$10.21</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Sausage</span>
-                        <span>
-                        <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="circle-holder">
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/pancake.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
                 </div>
             </div>
 
-            <!--===================  SHAKE   ======================-->
-            <div class="shake-images image-container">
-                <div class="shake-image">
-                    <img src="asset/third section/shake/beverage-g.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/beverage.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/chocolate-garlic.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/cocktail.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/coffee.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/cup.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/fruit.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="shake-image">
-                    <img src="asset/third section/shake/green.jpg" alt="">
-                    <div class="name-price-card">
-                        <span>$11.71</span>
-                        <span class="food-star">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <span>Milk Shake</span>
-                        <span>
-                            <a href="">Order Now</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="circle-holder">
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
-                    <span class="circles"></span>
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/brownie.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
                 </div>
             </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/chocolate-cake.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/churros.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/cupcakes.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/ice-cream-choco.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/ice-cream.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="dessert-image">
+                <img src="asset/third section/dessert/icecream-glass.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$10.21</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Sausage</span>
+                    <span>
+                    <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="circle-holder">
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+            </div>
+                     
+            <!--===================  SHAKE   ======================-->
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/beverage-g.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/beverage.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/chocolate-garlic.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+            
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/cocktail.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+            
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/coffee.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/cup.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/fruit.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <div data-items="shake-image">
+                <img src="asset/third section/shake/green.jpg" alt="">
+                <div class="name-price-card">
+                    <span>$11.71</span>
+                    <span class="food-star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span>Milk Shake</span>
+                    <span>
+                        <a href="">Order Now</a>
+                    </span>
+                </div>
+            </div>
+            <!--circle INDICATORS-->
+            <!--
+            <div data-items="shake-image">
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+                <span class="circles"></span>
+            </div>
+            -->
         </section>
     </section>
 
