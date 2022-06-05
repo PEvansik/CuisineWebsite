@@ -11,7 +11,6 @@ html {
 }
 .container {
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),  url('../asset/hero/hero-l.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,6 +45,21 @@ html {
 /*==========================================
 ================SECTION THREE=================
 ============================================*/
+
+.section-three {
+    padding: 3rem 0;
+}
+.order-online {
+    font-size: 1.1rem;
+    color: #ff2600;
+    font-weight: 700;
+}
+.section-three h2 {
+    padding-top: 0;
+}
+.order-online, .section-three h2 {
+    text-align: center;
+}
 
 .meal-class {
     margin-bottom: 5px;
@@ -186,6 +200,79 @@ html {
 ================SECTION FOUR=================
 ============================================*/
 
+.section-four {
+    background-image: linear-gradient(rgba(250, 250, 250, 0.8), rgba(240, 240, 240, 0.9)), url('../asset/fourthBack/fruits-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 0;
+}
+.section-four .book-hours {
+    text-align: center;
+    margin-top: 2rem;
+}
+.book-hours .booktable {
+    color: #ff2600;
+    font-weight: 700;
+}
+.section-four .book-hours h2 {
+    padding: 0;
+}
+.book-hours .phone {
+    font-size: 1.5rem;
+    color: #ff2600;
+    margin-top: 2.5rem;
+    display: block;
+}
+.book-hours .phone .fa-solid {
+    border: 1px solid #ff2600;
+    padding: .5rem;
+    border-radius: 50%;
+}
+.book-hours .call {
+    font-size: 1.1rem;
+}
+.book-hours .tel {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff2600;
+    margin-top: 1rem;
+}
+.work-period {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/* .work-period .work-period-left,
+.work-period .work-period-right {
+
+} */
+.work-period .work-period-left span,
+.work-period .work-period-right span {
+    display: block;
+
+}
+.work-period .work-period-left .open-day,
+.work-period .work-period-right .open-day{
+    font-size: 1rem;
+}
+.work-period .work-period-left .open-time,
+.work-period .work-period-right .open-time {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.food-vid {
+    margin: 1rem auto;
+    width: 80%;
+}
+.food-vid video {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
 
 /*==========================================
 ================MEDIA QUERY=================
@@ -195,7 +282,7 @@ html {
 @media only screen and (min-device-width: 0) {
 
     /*==========================================
-    ================SECTION ONE=================
+    ================NAVIGATION=================
     ============================================*/
     
     .container {
@@ -244,9 +331,7 @@ html {
     .hamburger.active .bottom {
         transform: rotate(-45deg) translateY(-8px);
     }
-    h1 {
-        font-size: 5rem;
-    }
+
     h2 {
         font-size: 3rem;
         padding: 15px 0;
@@ -256,18 +341,22 @@ html {
     /*==========================================
     ================SECTION ONE=================
     ============================================*/
-    .sectiion-one{
+    .section-one{
         text-align: center;
         color: white;
+        padding: 1rem 0;
     }
-    .sectiion-one > * {
-        padding: 20px ;
+    .section-one > * {
+        padding: 20px 5px;
         margin: 5px 0;
     }
-
-    form {
-        padding: 10px 0;
+    h1 {
+        font-size: 4rem;
     }
+    .search-meal {
+        padding: 25px 0;
+    }
+
     input {
         padding: 5px 0;
         border: none;
@@ -286,6 +375,7 @@ html {
         justify-content: space-between;
         align-items: center;
         font-size: 1.3rem;
+        padding: 1rem 3rem;
     }
     .fa-brands {
         padding-right: 5px;
@@ -316,22 +406,13 @@ html {
         color: white;
         padding: 0 5px;
     }
-    .section-two-span {
-        margin-top: 10px;
-        text-align: left;
-        font-size: 1rem;
-        position: absolute;
-        left: 10%;
-        margin-bottom: 15px;
-        color: #ffffffb4;
-    }
 
     .section-two > h2::before {
         content: "About Us";
         font-size: 1rem;
-        position: absolute;
-        left: 15px;
-        color: #ff2600b4;
+        /* position: absolute; */
+        color: #ff2600;
+        padding-right: 1rem;
 
     }
     p {
@@ -366,190 +447,12 @@ html {
     /*==========================================
     ================SECTION THREE=================
     ============================================*/
-    /* .section-three {
-        padding: 0 5px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    .order-online {
-        color: #ff2600;
-        padding-top: 10px;
-        font-weight: 700;
-    }
-    .meal-class {
-        margin-bottom: 5px;
-    }
-    .meal-class button {
-        font-size: 1.5rem;
-        border: none;
-        color: #ff2600b4;
-        padding: 0 2px;;
-        border-bottom: 1px solid #ff2600b4;
-        border-radius: 3px;
-    }
-    .breakfast:hover,
-    .launch:hover,
-    .dinner:hover,
-    .dessert:hover,
-    .shake:hover {
-        color: #000;
-        border-top: 1px solid #ff2600b4;
-        border-right: 1px solid #ff2600b4;
-        border-bottom: none;
-        border-left: 1px solid #ff2600b4;
-        background-color: #ff2600b4;
-    }
-    .meals {
-        text-align: center;
-    }
-
-    .carousel-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width:1000px;
-        height: 250px;
-        border: 1px solid red;
-        padding: 10px;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    .prev .fa-solid,
-    .next .fa-solid {
-        font-size: 2rem;
-        position: absolute;
-        color: #ff2600b4;
-        transition: all .3s;
-    }
-    .prev .fa-solid:hover,
-    .next .fa-solid:hover {
-        color: #ff2600;
-        transform: scale(1.3);
-    }
-    .prev .fa-solid {
-        left: 10px;
-        top: 50%;
-    }
-    .next .fa-solid {
-        right: 10px;
-        top: 50%;
-    }
-    
-    .carousel {
-        max-width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        border: 1px solid green;
-    }
-    .breakfast-images,
-    .launch-images,
-    .dinner-images,
-    .dessert-images,
-    .shake-images {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border: 1px solid blue;
-    }
-    .breakfast-images img,
-    .launch-images img,
-    .dinner-images img,
-    .dessert-images img,
-    .shake-images img {
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        object-fit: cover;
-    
-    }
-    
-    .name-price-card {
-        position: absolute;
-        inset: 0;
-    } */
-
 
 
     /*==========================================
     ================SECTION FOUR=================
     ============================================*/
-    .section-four {
-        background-image: linear-gradient(rgba(250, 250, 250, 0.8), rgba(240, 240, 240, 0.9)), url('../asset/fourthBack/fruits-small.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 2rem 0;
-    }
-    .section-four .book-hours {
-        text-align: center;
-        margin-top: 2rem;
-    }
-    .book-hours .booktable {
-        color: #ff2600;
-        font-weight: 700;
-    }
-    .section-four .book-hours h2 {
-        padding: 0;
-    }
-    .book-hours .phone {
-        font-size: 1.5rem;
-        color: #ff2600;
-        margin-top: 2.5rem;
-        display: block;
-    }
-    .book-hours .phone .fa-solid {
-        border: 1px solid #ff2600;
-        padding: .5rem;
-        border-radius: 50%;
-    }
-    .book-hours .call {
-        font-size: 1.1rem;
-    }
-    .book-hours .tel {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #ff2600;
-        margin-top: 1rem;
-    }
-    .work-period {
-        display: flex;
-        justify-content: space-around;
-        padding: 1rem;
-    }
-    /* .work-period .work-period-left,
-    .work-period .work-period-right {
 
-    } */
-    .work-period .work-period-left span,
-    .work-period .work-period-right span {
-        display: block;
-
-    }
-    .work-period .work-period-left .open-day,
-    .work-period .work-period-right .open-day{
-        font-size: 1rem;
-    }
-    .work-period .work-period-left .open-time,
-    .work-period .work-period-right .open-time {
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
-
-    .food-vid {
-        margin: 1rem auto;
-        width: 80%;
-    }
-    .food-vid video {
-        width: 100%;
-        height: auto;
-        border-radius: 3px;
-    }
 
         /*==========================================
     ================SECTION FIVE=================
@@ -613,5 +516,117 @@ html {
     /*==========================================
     ================MEDIA QUERY=================
     ============================================*/
+
+}
+
+@media only screen and (min-device-width: 587px) {
+
+
+    /*==========================================
+    ================SECTION ONE=================
+    ============================================*/
+
+    .section-one {
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .follower-stat {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .follower-stat li {
+        display: inline-block;
+        padding: 3rem 2rem;
+    }
+
+    /*==========================================
+    ================SECTION TWO=================
+    ============================================*/
+
+    .section-two {
+        text-align: center;
+    }
+    .section-two > h2::before {
+        font-size: 1.6rem;
+    }
+
+    .section-two p {
+        padding: 3rem;
+        line-height: 3.2rem;
+    }
+    .section-two-second-par {
+        display: block;
+    }
+
+        /*==========================================
+    ================SECTION THREE=================
+    ============================================*/
+
+        /*==========================================
+    ================SECTION FOUR=================
+    ============================================*/
+
+        /*==========================================
+    ================SECTION FIVE=================
+    ============================================*/
+}
+
+
+@media only screen and (min-device-width: 768px) {
+
+
+    .follower-stat {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+    /*==========================================
+    ================SECTION ONE=================
+    ============================================*/
+    .section-one {
+        text-align: left;
+        padding-left: 4rem;
+    }
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    /*==========================================
+    ================SECTION TWO=================
+    ============================================*/
+
+    .section-two {
+        text-align: center;
+    }
+    
+    .section-two h2 {
+        font: 3.5rem;
+    }
+    .section-two p {
+        font-size: 2rem;
+        padding: 3rem;
+        line-height: 3rem;
+    }
+    .discover .discover-menu {
+        padding: 0 10px;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-device-width: 1023px) {
+    .section-one {
+        padding-left: 5rem;
+    }
+    h1 {
+        font-size: 7.5rem;
+    }
+    .follower-stat {
+        display: inline-block;
+        font-size: 1.5rem;
+        /* border: 1px solid red; */
+    }
 
 }
