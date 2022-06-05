@@ -73,6 +73,12 @@ html {
     border-bottom: 1px solid #ff2600b4;
     border-radius: 3px;
 }
+
+/* Add JS active class for buttons */
+.meal-class button.active {
+    background-color: #ff2600b4;
+    color: white;
+}
 .breakfast:hover,
 .launch:hover,
 .dinner:hover,
@@ -265,7 +271,7 @@ html {
 
 .food-vid {
     margin: 1rem auto;
-    width: 80%;
+    width: 60%;
 }
 .food-vid video {
     width: 100%;
@@ -468,9 +474,6 @@ html {
         color: #ff2600;
         font-weight: 700;
     }
-    .testimonial-container {
-
-    }
     .detail-carousel {
         display: flex;
         overflow: hidden;
@@ -543,9 +546,9 @@ html {
         padding: 3rem 2rem;
     }
 
-    /*==========================================
-    ================SECTION TWO=================
-    ============================================*/
+    .follower-stat .fb-icon {
+        padding-left: 0;
+    }
 
     .section-two {
         text-align: center;
@@ -565,16 +568,65 @@ html {
         /*==========================================
     ================SECTION THREE=================
     ============================================*/
+    .order-online {
+        font-size: 1.5rem;
+    }
+    .meal-class button {
+        font-size: 1.8rem;
+        padding: 0 2px;
+        border-bottom: 1px solid #ff2600b4;
+        border-radius: 3px;
+    }
 
-        /*==========================================
+    /*==========================================
     ================SECTION FOUR=================
     ============================================*/
 
-        /*==========================================
+    .book-hours .booktable {
+        font-size: 1.5rem;
+    }
+    .book-hours .phone {
+        font-size: 3rem;
+    }
+    .book-hours .call {
+        font-size: 1.5rem;
+    }
+    .book-hours .tel {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ff2600;
+        margin-top: 1rem;
+    }
+    .work-period {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .work-period .work-period-left .open-day,
+    .work-period .work-period-right .open-day{
+        font-size: 1.3rem;
+    }
+    .work-period .work-period-left .open-time,
+    .work-period .work-period-right .open-time {
+        font-size: 1.5rem;
+    }
+    
+    .food-vid {
+        margin: 1rem auto;
+    }
+
+    /*==========================================
     ================SECTION FIVE=================
     ============================================*/
-}
 
+    .section-five .testimonial {
+        color: #ff2600;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+}
 
 @media only screen and (min-device-width: 768px) {
 
@@ -599,7 +651,8 @@ html {
     ============================================*/
 
     .section-two {
-        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     
     .section-two h2 {
@@ -617,6 +670,12 @@ html {
 }
 
 @media only screen and (min-device-width: 1023px) {
+
+    
+    
+    /*==========================================
+    ================SECTION ONE=================
+    ============================================*/
     .section-one {
         padding-left: 5rem;
     }
@@ -627,6 +686,19 @@ html {
         display: inline-block;
         font-size: 1.5rem;
         /* border: 1px solid red; */
+    }
+
+    /*==========================================
+    ================SECTION TWO=================
+    ============================================*/
+
+    .section-two h2 {
+        font: 5rem;
+    }
+    .section-two p {
+        font-size: 2.2rem;
+        padding: 3rem 7rem;
+        line-height: 3.5rem;
     }
 
 }
