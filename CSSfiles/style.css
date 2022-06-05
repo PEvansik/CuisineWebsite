@@ -7,7 +7,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .container {
     width: 100%;
@@ -101,7 +101,7 @@ html {
         transition: 3s ease-in-out;
         -webkit-transition: 3s ease-in-out;
     }
-    }
+    
     .hamburger.active .top {
         transform: rotate(45deg) translateY(8px);
     }
@@ -345,7 +345,135 @@ html {
     /*==========================================
     ================SECTION FOUR=================
     ============================================*/
+    .section-four {
+        background-image: linear-gradient(rgba(250, 250, 250, 0.8), rgba(240, 240, 240, 0.9)), url('../asset/fourthBack/fruits-small.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 2rem 0;
+    }
+    .section-four .book-hours {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .book-hours .booktable {
+        color: #ff2600;
+        font-weight: 700;
+    }
+    .section-four .book-hours h2 {
+        padding: 0;
+    }
+    .book-hours .phone {
+        font-size: 1.5rem;
+        color: #ff2600;
+        margin-top: 2.5rem;
+        display: block;
+    }
+    .book-hours .phone .fa-solid {
+        border: 1px solid #ff2600;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    .book-hours .call {
+        font-size: 1.1rem;
+    }
+    .book-hours .tel {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ff2600;
+        margin-top: 1rem;
+    }
+    .work-period {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    /* .work-period .work-period-left,
+    .work-period .work-period-right {
 
+    } */
+    .work-period .work-period-left span,
+    .work-period .work-period-right span {
+        display: block;
+
+    }
+    .work-period .work-period-left .open-day,
+    .work-period .work-period-right .open-day{
+        font-size: 1rem;
+    }
+    .work-period .work-period-left .open-time,
+    .work-period .work-period-right .open-time {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .food-vid {
+        margin: 1rem auto;
+        width: 80%;
+    }
+    .food-vid video {
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+    }
+
+        /*==========================================
+    ================SECTION FIVE=================
+    ============================================*/
+    .section-five {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .section-five h2 {
+        padding: 0;
+    }
+    .section-five .testimonial {
+        color: #ff2600;
+        font-weight: 700;
+    }
+    .detail-carousel {
+        display: flex;
+        max-width: 1000px;
+        overflow: hidden;
+    }
+    .customer-one {
+        margin: 2rem;
+        min-width: 90vw;
+        border: 1px solid red;
+        padding: 1em 0;
+    }
+    .customer-one .cus-pic {
+        margin: 1rem;
+        border: 1px solid red;
+    }
+    .img-holder {
+        width: 50px;
+        margin: 0 auto;
+    }
+    .customer-one .cus-pic img {
+        width: 100%;
+        /* height: auto; */
+        border-radius: 50%;
+        padding: 2px;
+    }
+    .customer-name,
+    .customer-jd,
+    .star {
+        display: block;
+        padding: 2px 0;
+    }
+    .customer-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-top: 0;
+    }
+    .customer-jd {
+        font-size: .9rem;
+    }
+    .detail p {
+        font-size: 1.5rem;
+    }
 
     /*==========================================
     ================MEDIA QUERY=================
