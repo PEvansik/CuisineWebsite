@@ -1,3 +1,66 @@
+
+
+
+
+// SECTION THREE
+let carousel = document.getElementById('carousel');
+let foodHolder =  document.getElementsByClassName('images');
+let prevButton = document.querySelector('.prev');
+let nextButton = document.querySelector('.next');
+
+let sortBtn = document.getElementById('meal-class').children
+let meals = carousel.children
+
+let totalPosition = foodHolder.length;
+console.log(totalPosition)
+
+prevButton.addEventListener('click', previous)
+nextButton.addEventListener('click', next)
+
+function previous() {
+    carousel.prepend(foodHolder[totalPosition - 1])
+}
+function next() {
+    carousel.append(foodHolder[0])
+}
+
+for(let i = 0; i < sortBtn.length; i++) {
+
+    sortBtn[i].addEventListener('click', function() {
+        let targetData = sortBtn[i].getAttribute("data-target")
+
+        for(let j = 0; j < foodHolder.length; j++) {
+
+            let targetItem = foodHolder[j].getAttribute("data-items")
+
+            if(targetData == 'all' || targetData == targetItem) {
+                foodHolder[j].classList.add('active')
+                foodHolder[j].classList.remove('delete')
+            }
+
+            else {
+                foodHolder[j].classList.remove('active')
+                foodHolder[j].classList.add('delete')
+            }
+
+        }
+
+    })  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //get elements in the same category e.g breakfast
 
 //create a varibale to track count (a countup and a countdown to track the element on display)
@@ -16,11 +79,3 @@
     //if the current element is the last element, return
 
 
-let mealButtons = document.querySelectorAll(".food-time")
-let imageContainers =document.querySelectorAll("image-container")
-
-mealButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-
-    })
-})

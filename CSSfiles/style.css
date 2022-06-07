@@ -626,6 +626,12 @@ html {
         font-weight: 700;
         font-size: 1.4rem;
     }
+
+
+    .section-five p {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -671,7 +677,7 @@ html {
 
 @media only screen and (min-device-width: 1023px) {
 
-    
+
     
     /*==========================================
     ================SECTION ONE=================
@@ -700,5 +706,8 @@ html {
         padding: 3rem 7rem;
         line-height: 3.5rem;
     }
+
+
+
 
 }
