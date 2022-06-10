@@ -348,17 +348,19 @@ html {
     justify-content: space-evenly;
     align-items: center;
 }
-.dots li {
+.dotli {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     border: 1px solid red;
 }
 /* for active dots */
-.dots li .active {
+.dotli .active {
     background-color: #ff2600;
 }
-
+.close {
+    display: none;
+}
 
 /*==========================================
 ================MEDIA QUERY=================
