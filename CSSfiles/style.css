@@ -279,6 +279,86 @@ html {
     border-radius: 3px;
 }
 
+/*==========================================
+================SECTION FIVE=================
+============================================*/
+
+.testimonial-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.detail-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.detail {
+    width: 100%;
+}
+.show {
+    display: block;
+}
+.customer-one {
+    margin: 2rem;
+    padding: 1em 0;
+    min-width: 90%;
+    border: 1px solid #ff2600;
+}
+.customer-one .cus-pic {
+    margin: 1rem;
+    border: 1px solid red;
+}
+.img-holder {
+    width: 50px;
+    margin: 0 auto;
+}
+.customer-one .cus-pic img {
+    width: 100%;
+    /* height: auto; */
+    border-radius: 50%;
+    padding: 2px;
+}
+.customer-name,
+.customer-jd,
+.star {
+    display: block;
+    padding: 2px 0;
+}
+.customer-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0;
+}
+.customer-jd {
+    font-size: .9rem;
+}
+.detail p {
+    font-size: 1.5rem;
+}
+
+.dots {
+    max-width: 300px;
+    height: 11px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+/* for active dots */
+.dots li .active {
+    background-color: #ff2600;
+}
+
 
 /*==========================================
 ================MEDIA QUERY=================
@@ -474,46 +554,10 @@ html {
         color: #ff2600;
         font-weight: 700;
     }
-    .detail-carousel {
-        display: flex;
-        overflow: hidden;
-    }
-    .customer-one {
-        margin: 2rem;
-        padding: 1em 0;
-        min-width: 90%;
-        border: 1px solid #ff2600;
-    }
-    .customer-one .cus-pic {
-        margin: 1rem;
-        border: 1px solid red;
-    }
-    .img-holder {
-        width: 50px;
+
+    .testimonial-container{
+        width: 80%;
         margin: 0 auto;
-    }
-    .customer-one .cus-pic img {
-        width: 100%;
-        /* height: auto; */
-        border-radius: 50%;
-        padding: 2px;
-    }
-    .customer-name,
-    .customer-jd,
-    .star {
-        display: block;
-        padding: 2px 0;
-    }
-    .customer-name {
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding-top: 0;
-    }
-    .customer-jd {
-        font-size: .9rem;
-    }
-    .detail p {
-        font-size: 1.5rem;
     }
 
     /*==========================================
@@ -565,7 +609,7 @@ html {
         display: block;
     }
 
-        /*==========================================
+    /*==========================================
     ================SECTION THREE=================
     ============================================*/
     .order-online {
@@ -707,7 +751,9 @@ html {
         line-height: 3.5rem;
     }
 
-
+    /*==========================================
+    ================SECTION FIVE=================
+    ============================================*/
 
 
 }

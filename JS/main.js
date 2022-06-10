@@ -50,7 +50,9 @@ for(let i = 0; i < sortBtn.length; i++) {
 
 
 
+// SECTION FOUR
 
+let testimonial = document.getElementById('testimony').children
 
 
 
