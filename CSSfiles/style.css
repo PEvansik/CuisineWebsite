@@ -284,29 +284,33 @@ html {
 ============================================*/
 
 .testimonial-container{
-    width: 80%;
+    max-width: 800px;
     margin: 0 auto;
 }
 .detail-carousel {
     width: 100%;
+    max-width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-.detail {
+
+.detail-carousel .detail,
+.detail-carousel .detail-hidden {
+    display: none;
     width: 100%;
-}
-.show {
-    display: block;
-}
-.customer-one {
+    max-width: 800px;
     margin: 2rem;
     padding: 1em 0;
     min-width: 90%;
     border: 1px solid #ff2600;
 }
-.customer-one .cus-pic {
+.detail-carousel .detail-show {
+    display: block;
+}
+
+.detail .cus-pic {
     margin: 1rem;
     border: 1px solid red;
 }
@@ -314,7 +318,7 @@ html {
     width: 50px;
     margin: 0 auto;
 }
-.customer-one .cus-pic img {
+.detail .cus-pic img {
     width: 100%;
     /* height: auto; */
     border-radius: 50%;
@@ -355,8 +359,11 @@ html {
     border: 1px solid red;
 }
 /* for active dots */
-.dotli .active {
+.active {
     background-color: #ff2600;
+}
+.leave {
+    background-color: transparent;
 }
 .close {
     display: none;

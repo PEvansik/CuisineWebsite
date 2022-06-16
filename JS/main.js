@@ -50,35 +50,41 @@ for(let i = 0; i < sortBtn.length; i++) {
 
 
 
-// SECTION FOUR
+// SECTION FIVE
 
-let testimonial = document.getElementById('testimony').children
-let dots = document.getElementById('dots')
-let tl = testimonial.length
-
-
-
-function loopImages() {
-
-let li = document.createElement('li')
-li.classList.add('dotli')
-dots.append(li)
-
-let list = document.getElementById('dots').children
-for (let i = 0; i < tl; i++) {
-    list[i].addEventListener('click', () => {
-        list[i].classList.add('active')
-        list[i].classList.remove('close')
-        for (j = 0; j < tl; j++) {
-            testimonial[j].classList.add('show')
-            testimonial[j].classList.add('close')
-        }
+// let testimonial = document.getElementById('testimony').children
+// let dots = document.getElementById('dots')
+// let tl = testimonial.length
 
 
-    })
-}
 
-}
+
+
+// for (let i = 0; i < tl; i++) {
+//     let lis = document.createElement('li')
+//     lis.classList.add('dotli')
+//     dots.append(lis)
+//     let list = dots.children
+
+//     // function loopImages() {
+
+//         list[i].addEventListener('click', () => {
+//             list[i].classList.add('active')
+
+            
+
+//             testimonial[i].classList.add('show')
+//             testimonial[i].classList.remove('close')
+
+//                 console.log(testimonial[i])
+            
+
+//             list[i].classList.remove('leave')
+//         })
+
+// }
+
+
 
 
 
