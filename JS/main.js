@@ -52,39 +52,59 @@ for(let i = 0; i < sortBtn.length; i++) {
 
 // SECTION FIVE
 
-// let testimonial = document.getElementById('testimony').children
-// let dots = document.getElementById('dots')
-// let tl = testimonial.length
+let testimonial = document.getElementById('testimony').children
+let dots = document.getElementById('dots')
+let tl = testimonial.length
+
+
+
+
+//create the dots
+for (let i = 0; i < tl; i++) {
+    let lis = document.createElement('li')
+    lis.classList.add('dotli')
+    dots.append(lis)
+    let list = dots.children
+
+    //  the first dot should be fault
+    list[0].classList.add('dotli-active')
+
+    // console.log(list)
+
+    list[i].addEventListener('click', function(e) {
+
+        for (item of list) {
+            item.classList.remove('dotli-active')
+         }
+         
+         list[i].classList.add('dotli-active')
+
+    
+        for (test of testimonial) {
+            test.classList.remove('detail-show')
+            test.classList.add('detail-hidden')
+        }
+    
+        testimonial[i].classList.add('detail-show')
+
+    
+        console.log(testimonial[i])
+    
+    })
+
+
+
+
+}
+         
+ 
 
 
 
 
 
-// for (let i = 0; i < tl; i++) {
-//     let lis = document.createElement('li')
-//     lis.classList.add('dotli')
-//     dots.append(lis)
-//     let list = dots.children
-
-//     // function loopImages() {
-
-//         list[i].addEventListener('click', () => {
-//             list[i].classList.add('active')
-
-            
-
-//             testimonial[i].classList.add('show')
-//             testimonial[i].classList.remove('close')
-
-//                 console.log(testimonial[i])
-            
 
 //             list[i].classList.remove('leave')
-//         })
-
-// }
-
-
 
 
 

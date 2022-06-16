@@ -359,15 +359,13 @@ html {
     border: 1px solid red;
 }
 /* for active dots */
-.active {
+.dotli-active {
     background-color: #ff2600;
 }
-.leave {
+.dotli-leave {
     background-color: transparent;
 }
-.close {
-    display: none;
-}
+
 
 /*==========================================
 ================MEDIA QUERY=================
