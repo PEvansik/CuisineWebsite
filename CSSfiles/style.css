@@ -304,7 +304,8 @@ html {
     margin: 2rem;
     padding: 1em 0;
     min-width: 90%;
-    border: 1px solid #ff2600;
+    border: .1px dashed #ff2600;
+    border-radius: 5px;
 }
 .detail-carousel .detail-show {
     display: block;
@@ -312,10 +313,10 @@ html {
 
 .detail .cus-pic {
     margin: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .img-holder {
-    width: 50px;
+    width: 100px;
     margin: 0 auto;
 }
 .detail .cus-pic img {
@@ -331,21 +332,24 @@ html {
     padding: 2px 0;
 }
 .customer-name {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     padding-top: 0;
 }
 .customer-jd {
-    font-size: .9rem;
+    font-size: 1.5rem;
+}
+.star {
+    font-size: 2rem;
 }
 .detail p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .dots {
     max-width: 300px;
     height: 11px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
     list-style: none;

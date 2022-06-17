@@ -1,7 +1,4 @@
 
-
-
-
 // SECTION THREE
 let carousel = document.getElementById('carousel');
 let foodHolder =  document.getElementsByClassName('images');
@@ -37,14 +34,11 @@ for(let i = 0; i < sortBtn.length; i++) {
                 foodHolder[j].classList.add('active')
                 foodHolder[j].classList.remove('delete')
             }
-
             else {
                 foodHolder[j].classList.remove('active')
                 foodHolder[j].classList.add('delete')
             }
-
         }
-
     })  
 }
 
@@ -57,82 +51,47 @@ let dots = document.getElementById('dots')
 let tl = testimonial.length
 
 
-
-
-//create the dots
 for (let i = 0; i < tl; i++) {
+
+    //create the dots
     let lis = document.createElement('li')
     lis.classList.add('dotli')
     dots.append(lis)
     let list = dots.children
 
-    //  the first dot should be fault
+    //make the first dot fault
     list[0].classList.add('dotli-active')
 
-    // console.log(list)
-
+    //add an event listener to each dot
     list[i].addEventListener('click', function(e) {
 
+        //access all dots using a loop
         for (item of list) {
+            //remove all dots from active state
             item.classList.remove('dotli-active')
          }
-         
-         list[i].classList.add('dotli-active')
 
-    
+        //put the clicked dot in the active state
+        e.target.classList.add('dotli-active')
+        //OR list[i].classList.add('dotli-active')
+
+        //access all the testimonials using a loop
         for (test of testimonial) {
+            //find the present one and remove the active satte class
             test.classList.remove('detail-show')
+            //hide ALL the testimonials
             test.classList.add('detail-hidden')
         }
     
+        //display the testimonial that corresponds to the active dot
         testimonial[i].classList.add('detail-show')
-
-    
+        //confirm the said testimonial in the console
         console.log(testimonial[i])
     
     })
-
-
-
-
 }
          
  
-
-
-
-
-
-
-//             list[i].classList.remove('leave')
-
-
-
-//perform action with the customers
-//list[i].addEventListener('click', tlock)
-//
-//loop through the circles
-//function glock() {
-//    for (let i = 0; i < tl; i++) {
-//      list[i].addEventListener('click', () => {
-//          testimonial[i].classList.add('active')
-//          
-//          
-//      })
-//    }
-//}
-//item => {
-//    testimo
-// })
-//
-
-
-
-
-
-
-
-
 
 
 
