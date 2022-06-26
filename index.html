@@ -19,75 +19,82 @@
         =============================================-->
         <nav class="navbar">
             <div class="logo">
-                <img src="asset/logo/icon-for-food.jpg" alt="cuisineLogo">
+                <!-- <img src="asset/logo/icon-for-food.jpg" alt="cuisineLogo"> -->
+                <img src="/asset/defaultlogo.png" alt="cuisineLogo">
             </div>
-            <div class="menu">
-                <ul class='nav-list'>
-                    <l1>Home</l1>
-                    <l1>About Us</l1>
-                    <l1>Menu</l1>
-                    <l1>Order Now</l1>
-                    <l1>Blog</l1>
-                    <li>Location</li>
+
+            <!-- Menu List -->
+            <div class="menu" id="menu">
+                <ul class='nav-list' id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#foodmenu">Menu</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#testimony">Testimony</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
-                <ul>
-                    <li class="nav-cart">
-                        <i class="fa-solid fa-cart-circle-plus"></i>
-                    </li>
+                <!-- <ul class="nav-symbols">
                     <li class="nav-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
-            <div class="hamburger">
+            
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
                  <span class="ham top"></span>
                  <span class="ham middle"></span>
                  <span class="ham bottom"></span>
             </div>
         </nav>
-        <!--=========================================
+
+    </header>
+
+            <!--=========================================
         ===============SECTION ONE===================
         =============================================-->
-        <section class="section-one">
-            <h1>Welcome <br>To Our Cuisine <br>Restaurant</h1>
-            <form class="search-meal" action="">
-                <input type="text" placeholder="Search meal here">
-                <button class="location-button">Location<i class="fa-solid fa-caret-down"></i></button>
-            </form>
-            <ul class="follower-stat">
-                <li class="fb-icon"><i class="fa-brands fa-facebook"></i>252k</li>
-                <li><i class="fa-brands fa-twitter-square"></i>62k</li>
-                <li><i class="fa-brands fa-instagram-square"></i>55k</i></li>
-            </ul>
-        </section>
-    </header>
+    <main class="section-one">
+        <h1>Welcome <br>To Our Cuisine <br>Restaurant</h1>
+        <form class="search-meal" action="">
+            <input type="text" placeholder="Search meal here">
+            <button class="location-button">Location<i class="fa-solid fa-caret-down"></i></button>
+        </form>
+        <!-- <ul class="follower-stat">
+            <li class="fb-icon"><i class="fa-brands fa-facebook"></i>252k</li>
+            <li><i class="fa-brands fa-twitter-square"></i>62k</li>
+            <li><i class="fa-brands fa-instagram-square"></i>55k</i></li>
+        </ul> -->
+    </main>
     <!--===============================================
         ===============SECTION TWO=====================
         =============================================-->
-    <section class="section-two">
-        <h2>Discover Our Restaurant Story</h2>
-        <p class="section-two-one-par">Cuisine is a team work of cuisine restaurant cafe, we aim at promoting the 
-            foodstuff industry through the branches we establish andthrough the new dishes
-            and integrate between different cultures. Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Aliquam deserunt totam nostrum tenetur quis obcaecati voluptatem 
-            nulla ratione impedit blanditiis debitis ipsa iure quo officiis maxime inventore 
-            explicabo, doloribus architecto! Recusandae ullam in officiis! Ad, odit molestias 
-            aut reiciendis maiores accusamus repellat architecto distinctio, temporibus odio 
-            voluptate, magni laboriosam dolores!
-        </p>
-        <p class="section-two-second-par">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore architecto 
-            consequatur blanditiis accusantium explicabo ad impedit a optio nemo.
-        </p>
-        <button class="discover">
-            <a href="#" class="discover-menu">Discover Menu<i class="fa-solid fa-arrow-right"></i></a>
-        </button>
+    <section class="section-two" id="about" name="about">
+        <div class="section-two-container">
+            <h2>Discover Our Restaurant Story</h2>
+            <p class="section-two-one-par">Cuisine is a team work of cuisine restaurant cafe, we aim at promoting the 
+                foodstuff industry through the branches we establish andthrough the new dishes
+                and integrate between different cultures. Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Aliquam deserunt totam nostrum tenetur quis obcaecati voluptatem 
+                nulla ratione impedit blanditiis debitis ipsa iure quo officiis maxime inventore 
+                explicabo, doloribus architecto! Recusandae ullam in officiis! Ad, odit molestias 
+                aut reiciendis maiores accusamus repellat architecto distinctio, temporibus odio 
+                voluptate, magni laboriosam dolores!
+            </p>
+            <p class="section-two-second-par">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore architecto 
+                consequatur blanditiis accusantium explicabo ad impedit a optio nemo.
+            </p>
+            <button class="discover">
+                <a href="#" class="discover-menu">Discover Menu<i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+        </div>
+
     </section>
 
     <!--===============================================
         ===============SECTION THREE=====================
         =============================================-->
-    <section class="section-three">
+    <section class="section-three" id="foodmenu">
 
         <div class="order-online">
             <span>Order Online Now</span>
@@ -96,12 +103,12 @@
         <h2>Our Speciality Cuisine</h2>
 
         <div class="meal-class" id="meal-class">
-            <button href="#" class="all" data-target="all">All</button>
-            <button href="#" class="breakfast" data-target="breakfast">Breakfast</button>
-            <button href="#" class="launch" data-target="launch">Launch</button>
-            <button href="#" class="dinner" data-target="dinner">Dinner</button>
-            <button href="#" class="dessert" data-target="dessert">Dessert</button>
-            <button href="#" class="shake" data-target="shake">Shake</button>
+            <button href="#" class="mealbtn all" data-target="all">All</button>
+            <button href="#" class="mealbtn breakfast" data-target="breakfast">Breakfast</button>
+            <button href="#" class="mealbtn launch" data-target="launch">Launch</button>
+            <button href="#" class="mealbtn dinner" data-target="dinner">Dinner</button>
+            <button href="#" class="mealbtn dessert" data-target="dessert">Dessert</button>
+            <button href="#" class="mealbtn shake" data-target="shake">Shake</button>
         </div>
         
         <section class="carousel-container">
@@ -1016,13 +1023,13 @@
     <!--===============================================
     ===============SECTION FOUR=======================
     =================================================-->
-    <section class="section-four">
+    <section class="section-four" id="booking">
         <div class="book-hours">
             <span class="booktable">Book Table</span>
             <h2 class="open-hours">Opening Hours</h2>
             <span class="phone"><i class="fa-solid fa-phone"></i></span>
             <span class="call">Call Now</span>
-            <span class="tel">+6 - 895489</span>
+            <span class="tel">foodstack.eth</span>
         </div>
 
         <div class="work-period">
@@ -1045,12 +1052,12 @@
     <!--===============================================
     ===============SECTION FIVE=======================
     =================================================-->
-    <section class="section-five">
+    <section class="section-five" id="testimony">
         <span class="testimonial">Testimonials</span>
         <h2>Customers Say</h2>
 
         <section class="testimonial-container" >
-            <section class="detail-carousel" id="testimony">
+            <section class="detail-carousel" id="testimon">
                 <div class="customer-one detail detail-show">
                     <div class="cus-pic">
                         <div class="img-holder">
@@ -1078,7 +1085,7 @@
                 <div class="customer-two detail">
                     <div class="cus-pic">
                         <div class="img-holder">
-                            <img src="/asset/Avatar.png" alt="">
+                            <img src="/asset/tiger.png" alt="">
                         </div>
                         
                     </div>
@@ -1102,7 +1109,7 @@
                 <div class="customer-three detail">
                     <div class="cus-pic">
                         <div class="img-holder">
-                            <img src="/asset/Avatar.png" alt="">
+                            <img src="/asset/mamelben (2).png" alt="">
                         </div>
                         
                     </div>
@@ -1126,7 +1133,7 @@
                 <div class="customer-four detail">
                     <div class="cus-pic">
                         <div class="img-holder">
-                            <img src="/asset/Avatar.png" alt="">
+                            <img src="/asset/barr.png" alt="">
                         </div>
                         
                     </div>
@@ -1150,7 +1157,7 @@
                 <div class="customer-five detail">
                     <div class="cus-pic">
                         <div class="img-holder">
-                            <img src="/asset/Avatar.png" alt="">
+                            <img src="/asset/lilian.png" alt="">
                         </div>
                         
                     </div>
@@ -1176,6 +1183,20 @@
 
        
     </section>
+
+
+    <!--===============================================
+    ===============SECTION FIVE=======================
+    =================================================-->
+
+    <section id="contact">
+        <div>foodstack.eth&copy;<span class="timeline"></span></div>
+        <div>
+            <span>Designed and Built by</span>
+            <a href='https://twitter.com/IamPaulEv' ><i class="fa-brands fa-twitter-square"></i>@IamPaulEv</a>    
+        </div>
+    </section>
+
 
     <script src="JS/main.js"></script>
 </body>
