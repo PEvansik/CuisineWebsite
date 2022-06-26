@@ -81,9 +81,8 @@ html{
     text-align: center;
     color: white;
     padding: 1rem 0;
-    margin-top: ;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/asset/hero/hero-l.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../asset/hero/hero-l.jpg');
     background-position: center;
 }
 /* .section-one > * {
@@ -602,7 +601,7 @@ margin-right: 1rem;
         text-align: center;
         color: white;
         padding: 1rem 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/asset/hero/hero-m.jpg')
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../asset/hero/hero-m.jpg')
     }
     h1 {
         font-size: 5rem;
